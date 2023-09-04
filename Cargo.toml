@@ -5,4 +5,14 @@ edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
+[lib]
+name = "ucsvgen"
+path = "src/lib.rs"
+
 [dependencies]
+rand = "0.8.5"
+thiserror = "1.0.47"
+strum = "0.25"
+strum_macros = "0.25"
+rayon = "1.7.0"
+anyhow = { version = "1.0.66", features = ["backtrace"] }
